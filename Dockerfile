@@ -1,10 +1,9 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install -y \
+RUN sudo apt update && sudo apt install -y \
     python3.10 \
+    python3-pip \
     git
-
-RUN python -m pip3
 
 RUN pip3 install PyYAML
 
