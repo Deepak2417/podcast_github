@@ -2,8 +2,9 @@ FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y \
     python3.13 \
-    python3 -m pip3 \
     git
+
+RUN python -m pip3
 
 RUN pip3 install PyYAML
 
